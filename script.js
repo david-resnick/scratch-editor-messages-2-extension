@@ -8,14 +8,14 @@ function load() {
 	$('#messagesmenu').remove();
 	if(parseInt($(".notificationsCount").html()) === 0 || $(".notificationsCount").html() === null) {
 		// no messages
-		$('body').after('<div title="Click to view messages" id="messagesmenu" onclick="window.location=\'http://scratch.mit.edu/messages\'">No Messages</span>');
+		$('body').after('<div title="Click to view messages" id="messagesmenu" onclick="window.location=\'https://scratch.mit.edu/messages\'">No Messages</span>');
 	} else {
 		if(parseInt($(".notificationsCount").html())===1) {
 			// 1 message
-			$('body').after('<div title="Click to view messages" id="messagesmenu" onclick="window.location=\'http://scratch.mit.edu/messages\'">1 Message!</span>');
+			$('body').after('<div title="Click to view messages" id="messagesmenu" onclick="window.location=\'https://scratch.mit.edu/messages\'">1 Message!</span>');
 		} else {
 			// multiple messages
-			$('body').after('<div title="Click to view messages" id="messagesmenu" onclick="window.location=\'http://scratch.mit.edu/messages\'">'+$(".notificationsCount").html()+' Messages!</span>');
+			$('body').after('<div title="Click to view messages" id="messagesmenu" onclick="window.location=\'https://scratch.mit.edu/messages\'">'+$(".notificationsCount").html()+' Messages!</span>');
 		}
 	}
 }
